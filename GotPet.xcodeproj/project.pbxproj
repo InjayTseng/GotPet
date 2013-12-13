@@ -21,6 +21,11 @@
 		F761AF00185B17C000CF06F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F761AEE2185B17C000CF06F4 /* UIKit.framework */; };
 		F761AF08185B17C000CF06F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F761AF06185B17C000CF06F4 /* InfoPlist.strings */; };
 		F761AF0A185B17C000CF06F4 /* GotPetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F761AF09185B17C000CF06F4 /* GotPetTests.m */; };
+		F761AF15185B1D9F00CF06F4 /* TTUITableViewZoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = F761AF14185B1D9F00CF06F4 /* TTUITableViewZoomController.m */; };
+		F761AF17185B1F2200CF06F4 /* FancyCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F761AF16185B1F2200CF06F4 /* FancyCellView.xib */; };
+		F761AF19185B1F4600CF06F4 /* Screen Shot 2013-12-13 at 5.25.36 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = F761AF18185B1F4600CF06F4 /* Screen Shot 2013-12-13 at 5.25.36 PM.png */; };
+		F761AF1C185B228900CF06F4 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F761AF1B185B228900CF06F4 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F761AF1F185B244B00CF06F4 /* PetParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = F761AF1E185B244B00CF06F4 /* PetParsing.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,14 @@
 		F761AF05185B17C000CF06F4 /* GotPetTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GotPetTests-Info.plist"; sourceTree = "<group>"; };
 		F761AF07185B17C000CF06F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F761AF09185B17C000CF06F4 /* GotPetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GotPetTests.m; sourceTree = "<group>"; };
+		F761AF13185B1D9F00CF06F4 /* TTUITableViewZoomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTUITableViewZoomController.h; sourceTree = "<group>"; };
+		F761AF14185B1D9F00CF06F4 /* TTUITableViewZoomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTUITableViewZoomController.m; sourceTree = "<group>"; };
+		F761AF16185B1F2200CF06F4 /* FancyCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FancyCellView.xib; sourceTree = "<group>"; };
+		F761AF18185B1F4600CF06F4 /* Screen Shot 2013-12-13 at 5.25.36 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2013-12-13 at 5.25.36 PM.png"; sourceTree = "<group>"; };
+		F761AF1A185B228900CF06F4 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		F761AF1B185B228900CF06F4 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		F761AF1D185B244B00CF06F4 /* PetParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PetParsing.h; sourceTree = "<group>"; };
+		F761AF1E185B244B00CF06F4 /* PetParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetParsing.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,13 +125,21 @@
 		F761AEE4185B17C000CF06F4 /* GotPet */ = {
 			isa = PBXGroup;
 			children = (
+				F761AF18185B1F4600CF06F4 /* Screen Shot 2013-12-13 at 5.25.36 PM.png */,
+				F761AF16185B1F2200CF06F4 /* FancyCellView.xib */,
 				F761AEED185B17C000CF06F4 /* AppDelegate.h */,
 				F761AEEE185B17C000CF06F4 /* AppDelegate.m */,
 				F761AEF0185B17C000CF06F4 /* Main.storyboard */,
 				F761AEF3185B17C000CF06F4 /* ViewController.h */,
 				F761AEF4185B17C000CF06F4 /* ViewController.m */,
+				F761AF1A185B228900CF06F4 /* JSONKit.h */,
+				F761AF1B185B228900CF06F4 /* JSONKit.m */,
+				F761AF13185B1D9F00CF06F4 /* TTUITableViewZoomController.h */,
+				F761AF14185B1D9F00CF06F4 /* TTUITableViewZoomController.m */,
 				F761AEF6185B17C000CF06F4 /* Images.xcassets */,
 				F761AEE5185B17C000CF06F4 /* Supporting Files */,
+				F761AF1D185B244B00CF06F4 /* PetParsing.h */,
+				F761AF1E185B244B00CF06F4 /* PetParsing.m */,
 			);
 			path = GotPet;
 			sourceTree = "<group>";
@@ -228,8 +249,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F761AF19185B1F4600CF06F4 /* Screen Shot 2013-12-13 at 5.25.36 PM.png in Resources */,
 				F761AEF7185B17C000CF06F4 /* Images.xcassets in Resources */,
 				F761AEE9185B17C000CF06F4 /* InfoPlist.strings in Resources */,
+				F761AF17185B1F2200CF06F4 /* FancyCellView.xib in Resources */,
 				F761AEF2185B17C000CF06F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,9 +272,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F761AF1F185B244B00CF06F4 /* PetParsing.m in Sources */,
 				F761AEF5185B17C000CF06F4 /* ViewController.m in Sources */,
 				F761AEEF185B17C000CF06F4 /* AppDelegate.m in Sources */,
+				F761AF15185B1D9F00CF06F4 /* TTUITableViewZoomController.m in Sources */,
 				F761AEEB185B17C000CF06F4 /* main.m in Sources */,
+				F761AF1C185B228900CF06F4 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +486,7 @@
 				F761AF0F185B17C000CF06F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F761AF10185B17C000CF06F4 /* Build configuration list for PBXNativeTarget "GotPetTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +495,7 @@
 				F761AF12185B17C000CF06F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

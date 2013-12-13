@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "PetParsing.h"
 
 @interface ViewController ()
 
@@ -14,16 +15,44 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+-(void)viewDidLoad{
+    [self.tableView registerNib:[UINib nibWithNibName:@"FancyCellView" bundle:nil]
+         forCellReuseIdentifier:@"FancyCellView"];
+    [PetParsing updateData:nil];
 }
 
-- (void)didReceiveMemoryWarning
+
+
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    // Return the number of sections.
+    return 1;
 }
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    
+    // Return the number of rows in the section.
+    return 50;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 204;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"FancyCellView";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    // Configure the cell...
+    
+    return cell;
+}
+
+
 
 @end

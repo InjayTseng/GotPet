@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TTUITableViewZoomController.h"
+@interface ViewController : TTUITableViewZoomController
 
-@interface ViewController : UIViewController
 
 @end
