@@ -9,9 +9,13 @@
 #import <Foundation/Foundation.h>
 
 typedef void (^CompletionBlock)(void);
+typedef void (^ArrayBlock)(NSArray* array);
 
 @interface PetParsing : NSObject
 
+
++(void)updateDataWithArray:(ArrayBlock)finishBlock;
 +(void)updateData:(CompletionBlock)finishBlock;
+
 
 @end

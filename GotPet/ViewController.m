@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "PetParsing.h"
-
+#import "RecordPlus.h"
 @interface ViewController ()
 
 @end
@@ -18,7 +18,13 @@
 -(void)viewDidLoad{
     [self.tableView registerNib:[UINib nibWithNibName:@"FancyCellView" bundle:nil]
          forCellReuseIdentifier:@"FancyCellView"];
-    [PetParsing updateData:nil];
+    
+    [PetParsing updateDataWithArray:^(NSArray *array) {
+        for (NSDictionary *obj in array){
+            RecordPlus* ex = (RecordPlus*)[RecordPlus instanceFromDictionary:obj];
+            NSLog(@"%@",ex.name);
+        }
+    }];
 }
 
 

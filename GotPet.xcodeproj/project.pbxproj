@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		613E7C48185B782100935637 /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = 613E7C46185B782100935637 /* Record.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		613E7C4B185B785C00935637 /* RecordPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = 613E7C4A185B785C00935637 /* RecordPlus.m */; };
 		F761AEDF185B17C000CF06F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F761AEDE185B17C000CF06F4 /* Foundation.framework */; };
 		F761AEE1185B17C000CF06F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F761AEE0185B17C000CF06F4 /* CoreGraphics.framework */; };
 		F761AEE3185B17C000CF06F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F761AEE2185B17C000CF06F4 /* UIKit.framework */; };
@@ -39,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		613E7C46185B782100935637 /* Record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Record.m; sourceTree = "<group>"; };
+		613E7C47185B782100935637 /* Record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Record.h; sourceTree = "<group>"; };
+		613E7C49185B785C00935637 /* RecordPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordPlus.h; sourceTree = "<group>"; };
+		613E7C4A185B785C00935637 /* RecordPlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordPlus.m; sourceTree = "<group>"; };
 		F761AEDB185B17C000CF06F4 /* GotPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GotPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F761AEDE185B17C000CF06F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F761AEE0185B17C000CF06F4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -132,14 +138,18 @@
 				F761AEF0185B17C000CF06F4 /* Main.storyboard */,
 				F761AEF3185B17C000CF06F4 /* ViewController.h */,
 				F761AEF4185B17C000CF06F4 /* ViewController.m */,
+				F761AF1D185B244B00CF06F4 /* PetParsing.h */,
+				F761AF1E185B244B00CF06F4 /* PetParsing.m */,
+				613E7C47185B782100935637 /* Record.h */,
+				613E7C49185B785C00935637 /* RecordPlus.h */,
+				613E7C4A185B785C00935637 /* RecordPlus.m */,
+				613E7C46185B782100935637 /* Record.m */,
 				F761AF1A185B228900CF06F4 /* JSONKit.h */,
 				F761AF1B185B228900CF06F4 /* JSONKit.m */,
 				F761AF13185B1D9F00CF06F4 /* TTUITableViewZoomController.h */,
 				F761AF14185B1D9F00CF06F4 /* TTUITableViewZoomController.m */,
 				F761AEF6185B17C000CF06F4 /* Images.xcassets */,
 				F761AEE5185B17C000CF06F4 /* Supporting Files */,
-				F761AF1D185B244B00CF06F4 /* PetParsing.h */,
-				F761AF1E185B244B00CF06F4 /* PetParsing.m */,
 			);
 			path = GotPet;
 			sourceTree = "<group>";
@@ -274,6 +284,8 @@
 			files = (
 				F761AF1F185B244B00CF06F4 /* PetParsing.m in Sources */,
 				F761AEF5185B17C000CF06F4 /* ViewController.m in Sources */,
+				613E7C4B185B785C00935637 /* RecordPlus.m in Sources */,
+				613E7C48185B782100935637 /* Record.m in Sources */,
 				F761AEEF185B17C000CF06F4 /* AppDelegate.m in Sources */,
 				F761AF15185B1D9F00CF06F4 /* TTUITableViewZoomController.m in Sources */,
 				F761AEEB185B17C000CF06F4 /* main.m in Sources */,

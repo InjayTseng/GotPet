@@ -11,8 +11,9 @@
 
 @implementation PetParsing
 
-+(void)updateData:(CompletionBlock)finishBlock{
-    
+
++(void)updateDataWithArray:(ArrayBlock)finishBlock{
+
     NSString *api = @"http://60.199.253.136/api/action/datastore_search?resource_id=c57f54e2-8ac3-4d30-bce0-637a8968796e&limit=500";
     NSURL *url = [ NSURL URLWithString:api];
     NSURLRequest *req = [ NSURLRequest requestWithURL:url
@@ -25,12 +26,16 @@
         
         NSDictionary *json = [newStr objectFromJSONString];
         NSArray* animalArray = [[json objectForKey:@"result"] objectForKey:@"records"];
-        for (id obj in animalArray){
-            
-            NSLog(@"%@",[obj objectForKey:@"Name"]);
-            
-        }
+        finishBlock(animalArray);
+    }];
+}
+
++(void)updateData:(CompletionBlock)finishBlock{
+    
+    [self updateDataWithArray:^(NSArray *array) {
         finishBlock();
     }];
 }
+
+
 @end
