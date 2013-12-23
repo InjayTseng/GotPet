@@ -10,5 +10,6 @@
 #import "TTUITableViewZoomController.h"
 @interface ViewController : TTUITableViewZoomController
 
+@property (strong, nonatomic) NSArray *showArray;
 
 @end

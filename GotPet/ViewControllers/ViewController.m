@@ -9,6 +9,9 @@
 #import "ViewController.h"
 #import "PetParsing.h"
 #import "RecordPlus.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "PetCell.h"
+
 @interface ViewController ()
 
 @end
@@ -16,18 +19,20 @@
 @implementation ViewController
 
 -(void)viewDidLoad{
-    [self.tableView registerNib:[UINib nibWithNibName:@"FancyCellView" bundle:nil]
-         forCellReuseIdentifier:@"FancyCellView"];
     
-    [PetParsing updateDataWithArray:^(NSArray *array) {
-        for (NSDictionary *obj in array){
-            RecordPlus* ex = (RecordPlus*)[RecordPlus instanceFromDictionary:obj];
-            NSLog(@"%@",ex.name);
-        }
+    self.showArray = [NSArray arrayWithObjects:nil];
+    [self.tableView registerNib:[UINib nibWithNibName:@"PetCell" bundle:nil]
+         forCellReuseIdentifier:@"PetCell"];
+    [PetParsing updateDataWithRecordArray:^(NSArray *array) {
+        [[PData shared] setPetArray:array];
+        [self performSelectorOnMainThread:@selector(refresh) withObject:Nil waitUntilDone:NO];
     }];
 }
 
-
+-(void)refresh{
+    [self setShowArray:[[PData shared] petArray]];
+    [self.tableView reloadData];
+}
 
 #pragma mark - Table view data source
 
@@ -41,21 +46,22 @@
 {
     
     // Return the number of rows in the section.
-    return 50;
+    return self.showArray.count;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 204;
+    return 160.;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"FancyCellView";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
+    static NSString *CellIdentifier = @"PetCell";
+    PetCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     // Configure the cell...
-    
+    RecordPlus *rp = [self.showArray objectAtIndex:indexPath.row];
+    [cell setByRecordPlus:rp];
+
     return cell;
 }
 

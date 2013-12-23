@@ -8,9 +8,22 @@
 
 #import "PetParsing.h"
 #import "JSONKit.h"
+#import "RecordPlus.h"
 
 @implementation PetParsing
 
++(void)updateDataWithRecordArray:(RecordArrayBlock)finishBlock{
+
+    [self updateDataWithArray:^(NSArray *array) {
+        NSMutableArray *tempArray = [[NSMutableArray alloc]initWithCapacity:0];
+        for (NSDictionary *obj in array){
+            RecordPlus* ex = (RecordPlus*)[RecordPlus instanceFromDictionary:obj];
+            [tempArray addObject:ex];
+        }
+        NSArray *petArray = [NSArray arrayWithArray:tempArray];
+        finishBlock(petArray);
+    }];
+}
 
 +(void)updateDataWithArray:(ArrayBlock)finishBlock{
 
@@ -30,12 +43,7 @@
     }];
 }
 
-+(void)updateData:(CompletionBlock)finishBlock{
-    
-    [self updateDataWithArray:^(NSArray *array) {
-        finishBlock();
-    }];
-}
+
 
 
 @end

@@ -10,12 +10,13 @@
 
 typedef void (^CompletionBlock)(void);
 typedef void (^ArrayBlock)(NSArray* array);
+typedef void (^RecordArrayBlock)(NSArray* array);
 
 @interface PetParsing : NSObject
 
++(void)updateDataWithRecordArray:(RecordArrayBlock)finishBlock; //return records
++(void)updateDataWithArray:(ArrayBlock)finishBlock; //return dictionary
 
-+(void)updateDataWithArray:(ArrayBlock)finishBlock;
-+(void)updateData:(CompletionBlock)finishBlock;
 
 
 @end

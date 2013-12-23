@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		613E7C48185B782100935637 /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = 613E7C46185B782100935637 /* Record.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		613E7C4B185B785C00935637 /* RecordPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = 613E7C4A185B785C00935637 /* RecordPlus.m */; };
 		F761AEDF185B17C000CF06F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F761AEDE185B17C000CF06F4 /* Foundation.framework */; };
 		F761AEE1185B17C000CF06F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F761AEE0185B17C000CF06F4 /* CoreGraphics.framework */; };
 		F761AEE3185B17C000CF06F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F761AEE2185B17C000CF06F4 /* UIKit.framework */; };
@@ -16,18 +14,23 @@
 		F761AEEB185B17C000CF06F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F761AEEA185B17C000CF06F4 /* main.m */; };
 		F761AEEF185B17C000CF06F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F761AEEE185B17C000CF06F4 /* AppDelegate.m */; };
 		F761AEF2185B17C000CF06F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F761AEF0185B17C000CF06F4 /* Main.storyboard */; };
-		F761AEF5185B17C000CF06F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F761AEF4185B17C000CF06F4 /* ViewController.m */; };
 		F761AEF7185B17C000CF06F4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F761AEF6185B17C000CF06F4 /* Images.xcassets */; };
 		F761AEFE185B17C000CF06F4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F761AEFD185B17C000CF06F4 /* XCTest.framework */; };
 		F761AEFF185B17C000CF06F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F761AEDE185B17C000CF06F4 /* Foundation.framework */; };
 		F761AF00185B17C000CF06F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F761AEE2185B17C000CF06F4 /* UIKit.framework */; };
-		F761AF08185B17C000CF06F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F761AF06185B17C000CF06F4 /* InfoPlist.strings */; };
-		F761AF0A185B17C000CF06F4 /* GotPetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F761AF09185B17C000CF06F4 /* GotPetTests.m */; };
-		F761AF15185B1D9F00CF06F4 /* TTUITableViewZoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = F761AF14185B1D9F00CF06F4 /* TTUITableViewZoomController.m */; };
-		F761AF17185B1F2200CF06F4 /* FancyCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F761AF16185B1F2200CF06F4 /* FancyCellView.xib */; };
-		F761AF19185B1F4600CF06F4 /* Screen Shot 2013-12-13 at 5.25.36 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = F761AF18185B1F4600CF06F4 /* Screen Shot 2013-12-13 at 5.25.36 PM.png */; };
-		F761AF1C185B228900CF06F4 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F761AF1B185B228900CF06F4 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F761AF1F185B244B00CF06F4 /* PetParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = F761AF1E185B244B00CF06F4 /* PetParsing.m */; };
+		F77219AA18614FC400C10984 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F77219A918614FC400C10984 /* SDWebImage.framework */; };
+		F77219AC18614FEC00C10984 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F77219AB18614FEC00C10984 /* ImageIO.framework */; };
+		F77219AF186150DE00C10984 /* PData.m in Sources */ = {isa = PBXBuildFile; fileRef = F77219AE186150DE00C10984 /* PData.m */; };
+		F77219B818617FF900C10984 /* PetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F77219B218617FF900C10984 /* PetCell.m */; };
+		F77219B918617FF900C10984 /* PetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F77219B318617FF900C10984 /* PetCell.xib */; };
+		F77219BA18617FF900C10984 /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = F77219B518617FF900C10984 /* Record.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F77219BB18617FF900C10984 /* RecordPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = F77219B718617FF900C10984 /* RecordPlus.m */; };
+		F77219C51861803700C10984 /* PetParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = F77219C01861803700C10984 /* PetParsing.m */; };
+		F77219CE1861805800C10984 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F77219CA1861805800C10984 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F77219CF1861805800C10984 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F77219CB1861805800C10984 /* SDWebImage.framework */; };
+		F77219D01861805800C10984 /* TTUITableViewZoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77219CD1861805800C10984 /* TTUITableViewZoomController.m */; };
+		F77219D31861808B00C10984 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = F77219D21861808B00C10984 /* 1.png */; };
+		F77219D71861810300C10984 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77219D61861810300C10984 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,10 +44,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		613E7C46185B782100935637 /* Record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Record.m; sourceTree = "<group>"; };
-		613E7C47185B782100935637 /* Record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Record.h; sourceTree = "<group>"; };
-		613E7C49185B785C00935637 /* RecordPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordPlus.h; sourceTree = "<group>"; };
-		613E7C4A185B785C00935637 /* RecordPlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordPlus.m; sourceTree = "<group>"; };
 		F761AEDB185B17C000CF06F4 /* GotPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GotPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F761AEDE185B17C000CF06F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F761AEE0185B17C000CF06F4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,22 +55,30 @@
 		F761AEED185B17C000CF06F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F761AEEE185B17C000CF06F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F761AEF1185B17C000CF06F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F761AEF3185B17C000CF06F4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F761AEF4185B17C000CF06F4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F761AEF6185B17C000CF06F4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F761AEFC185B17C000CF06F4 /* GotPetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GotPetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F761AEFD185B17C000CF06F4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		F761AF05185B17C000CF06F4 /* GotPetTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GotPetTests-Info.plist"; sourceTree = "<group>"; };
-		F761AF07185B17C000CF06F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F761AF09185B17C000CF06F4 /* GotPetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GotPetTests.m; sourceTree = "<group>"; };
-		F761AF13185B1D9F00CF06F4 /* TTUITableViewZoomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTUITableViewZoomController.h; sourceTree = "<group>"; };
-		F761AF14185B1D9F00CF06F4 /* TTUITableViewZoomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTUITableViewZoomController.m; sourceTree = "<group>"; };
-		F761AF16185B1F2200CF06F4 /* FancyCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FancyCellView.xib; sourceTree = "<group>"; };
-		F761AF18185B1F4600CF06F4 /* Screen Shot 2013-12-13 at 5.25.36 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2013-12-13 at 5.25.36 PM.png"; sourceTree = "<group>"; };
-		F761AF1A185B228900CF06F4 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		F761AF1B185B228900CF06F4 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
-		F761AF1D185B244B00CF06F4 /* PetParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PetParsing.h; sourceTree = "<group>"; };
-		F761AF1E185B244B00CF06F4 /* PetParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetParsing.m; sourceTree = "<group>"; };
+		F77219A918614FC400C10984 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = GotPet/SDWebImage.framework; sourceTree = "<group>"; };
+		F77219AB18614FEC00C10984 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		F77219AD186150DE00C10984 /* PData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PData.h; sourceTree = "<group>"; };
+		F77219AE186150DE00C10984 /* PData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PData.m; sourceTree = "<group>"; };
+		F77219B118617FF900C10984 /* PetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PetCell.h; sourceTree = "<group>"; };
+		F77219B218617FF900C10984 /* PetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetCell.m; sourceTree = "<group>"; };
+		F77219B318617FF900C10984 /* PetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PetCell.xib; sourceTree = "<group>"; };
+		F77219B418617FF900C10984 /* Record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Record.h; sourceTree = "<group>"; };
+		F77219B518617FF900C10984 /* Record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Record.m; sourceTree = "<group>"; };
+		F77219B618617FF900C10984 /* RecordPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordPlus.h; sourceTree = "<group>"; };
+		F77219B718617FF900C10984 /* RecordPlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordPlus.m; sourceTree = "<group>"; };
+		F77219BF1861803700C10984 /* PetParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PetParsing.h; sourceTree = "<group>"; };
+		F77219C01861803700C10984 /* PetParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetParsing.m; sourceTree = "<group>"; };
+		F77219C91861805800C10984 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		F77219CA1861805800C10984 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		F77219CB1861805800C10984 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
+		F77219CC1861805800C10984 /* TTUITableViewZoomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTUITableViewZoomController.h; sourceTree = "<group>"; };
+		F77219CD1861805800C10984 /* TTUITableViewZoomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTUITableViewZoomController.m; sourceTree = "<group>"; };
+		F77219D21861808B00C10984 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		F77219D51861810300C10984 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F77219D61861810300C10984 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +86,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F77219AC18614FEC00C10984 /* ImageIO.framework in Frameworks */,
+				F77219AA18614FC400C10984 /* SDWebImage.framework in Frameworks */,
 				F761AEE1185B17C000CF06F4 /* CoreGraphics.framework in Frameworks */,
 				F761AEE3185B17C000CF06F4 /* UIKit.framework in Frameworks */,
+				F77219CF1861805800C10984 /* SDWebImage.framework in Frameworks */,
 				F761AEDF185B17C000CF06F4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				F761AEE4185B17C000CF06F4 /* GotPet */,
-				F761AF03185B17C000CF06F4 /* GotPetTests */,
 				F761AEDD185B17C000CF06F4 /* Frameworks */,
 				F761AEDC185B17C000CF06F4 /* Products */,
 			);
@@ -120,6 +129,8 @@
 		F761AEDD185B17C000CF06F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F77219AB18614FEC00C10984 /* ImageIO.framework */,
+				F77219A918614FC400C10984 /* SDWebImage.framework */,
 				F761AEDE185B17C000CF06F4 /* Foundation.framework */,
 				F761AEE0185B17C000CF06F4 /* CoreGraphics.framework */,
 				F761AEE2185B17C000CF06F4 /* UIKit.framework */,
@@ -131,23 +142,15 @@
 		F761AEE4185B17C000CF06F4 /* GotPet */ = {
 			isa = PBXGroup;
 			children = (
-				F761AF18185B1F4600CF06F4 /* Screen Shot 2013-12-13 at 5.25.36 PM.png */,
-				F761AF16185B1F2200CF06F4 /* FancyCellView.xib */,
 				F761AEED185B17C000CF06F4 /* AppDelegate.h */,
 				F761AEEE185B17C000CF06F4 /* AppDelegate.m */,
+				F77219AD186150DE00C10984 /* PData.h */,
+				F77219AE186150DE00C10984 /* PData.m */,
 				F761AEF0185B17C000CF06F4 /* Main.storyboard */,
-				F761AEF3185B17C000CF06F4 /* ViewController.h */,
-				F761AEF4185B17C000CF06F4 /* ViewController.m */,
-				F761AF1D185B244B00CF06F4 /* PetParsing.h */,
-				F761AF1E185B244B00CF06F4 /* PetParsing.m */,
-				613E7C47185B782100935637 /* Record.h */,
-				613E7C49185B785C00935637 /* RecordPlus.h */,
-				613E7C4A185B785C00935637 /* RecordPlus.m */,
-				613E7C46185B782100935637 /* Record.m */,
-				F761AF1A185B228900CF06F4 /* JSONKit.h */,
-				F761AF1B185B228900CF06F4 /* JSONKit.m */,
-				F761AF13185B1D9F00CF06F4 /* TTUITableViewZoomController.h */,
-				F761AF14185B1D9F00CF06F4 /* TTUITableViewZoomController.m */,
+				F77219D41861810300C10984 /* ViewControllers */,
+				F77219BC1861803700C10984 /* Tool */,
+				F77219B018617FF900C10984 /* Module */,
+				F77219D11861808B00C10984 /* Resources */,
 				F761AEF6185B17C000CF06F4 /* Images.xcassets */,
 				F761AEE5185B17C000CF06F4 /* Supporting Files */,
 			);
@@ -165,22 +168,57 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F761AF03185B17C000CF06F4 /* GotPetTests */ = {
+		F77219B018617FF900C10984 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				F761AF09185B17C000CF06F4 /* GotPetTests.m */,
-				F761AF04185B17C000CF06F4 /* Supporting Files */,
+				F77219B118617FF900C10984 /* PetCell.h */,
+				F77219B218617FF900C10984 /* PetCell.m */,
+				F77219B318617FF900C10984 /* PetCell.xib */,
+				F77219B418617FF900C10984 /* Record.h */,
+				F77219B518617FF900C10984 /* Record.m */,
+				F77219B618617FF900C10984 /* RecordPlus.h */,
+				F77219B718617FF900C10984 /* RecordPlus.m */,
 			);
-			path = GotPetTests;
+			path = Module;
 			sourceTree = "<group>";
 		};
-		F761AF04185B17C000CF06F4 /* Supporting Files */ = {
+		F77219BC1861803700C10984 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				F761AF05185B17C000CF06F4 /* GotPetTests-Info.plist */,
-				F761AF06185B17C000CF06F4 /* InfoPlist.strings */,
+				F77219C81861805800C10984 /* ThirdParty */,
+				F77219BF1861803700C10984 /* PetParsing.h */,
+				F77219C01861803700C10984 /* PetParsing.m */,
 			);
-			name = "Supporting Files";
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		F77219C81861805800C10984 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				F77219CB1861805800C10984 /* SDWebImage.framework */,
+				F77219C91861805800C10984 /* JSONKit.h */,
+				F77219CA1861805800C10984 /* JSONKit.m */,
+				F77219CC1861805800C10984 /* TTUITableViewZoomController.h */,
+				F77219CD1861805800C10984 /* TTUITableViewZoomController.m */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		F77219D11861808B00C10984 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F77219D21861808B00C10984 /* 1.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F77219D41861810300C10984 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F77219D51861810300C10984 /* ViewController.h */,
+				F77219D61861810300C10984 /* ViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,10 +297,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F761AF19185B1F4600CF06F4 /* Screen Shot 2013-12-13 at 5.25.36 PM.png in Resources */,
 				F761AEF7185B17C000CF06F4 /* Images.xcassets in Resources */,
 				F761AEE9185B17C000CF06F4 /* InfoPlist.strings in Resources */,
-				F761AF17185B1F2200CF06F4 /* FancyCellView.xib in Resources */,
+				F77219D31861808B00C10984 /* 1.png in Resources */,
+				F77219B918617FF900C10984 /* PetCell.xib in Resources */,
 				F761AEF2185B17C000CF06F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,7 +309,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F761AF08185B17C000CF06F4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,14 +319,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F761AF1F185B244B00CF06F4 /* PetParsing.m in Sources */,
-				F761AEF5185B17C000CF06F4 /* ViewController.m in Sources */,
-				613E7C4B185B785C00935637 /* RecordPlus.m in Sources */,
-				613E7C48185B782100935637 /* Record.m in Sources */,
+				F77219AF186150DE00C10984 /* PData.m in Sources */,
+				F77219BA18617FF900C10984 /* Record.m in Sources */,
+				F77219CE1861805800C10984 /* JSONKit.m in Sources */,
+				F77219BB18617FF900C10984 /* RecordPlus.m in Sources */,
+				F77219D01861805800C10984 /* TTUITableViewZoomController.m in Sources */,
+				F77219D71861810300C10984 /* ViewController.m in Sources */,
 				F761AEEF185B17C000CF06F4 /* AppDelegate.m in Sources */,
-				F761AF15185B1D9F00CF06F4 /* TTUITableViewZoomController.m in Sources */,
+				F77219B818617FF900C10984 /* PetCell.m in Sources */,
+				F77219C51861803700C10984 /* PetParsing.m in Sources */,
 				F761AEEB185B17C000CF06F4 /* main.m in Sources */,
-				F761AF1C185B228900CF06F4 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +336,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F761AF0A185B17C000CF06F4 /* GotPetTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,14 +364,6 @@
 				F761AEF1185B17C000CF06F4 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F761AF06185B17C000CF06F4 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F761AF07185B17C000CF06F4 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -416,9 +446,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/dtseng/Documents/iOS\\ Workspace/GitHub/GotPet",
+					"/Users/dtseng/Documents/iOS\\ Workspace/GitHub/GotPet/GotPet",
+					"/Users/dtseng/Documents/iOS\\ Workspace/GitHub/GotPet/GotPet/Tool",
+					"/Users/dtseng/Documents/iOS\\ Workspace/GitHub/GotPet/GotPet/Tool/ThirdParty",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GotPet/GotPet-Prefix.pch";
 				INFOPLIST_FILE = "GotPet/GotPet-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/dtseng/Documents/iOS\\ Workspace/GitHub/GotPet/GotPet",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -429,9 +471,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/dtseng/Documents/iOS\\ Workspace/GitHub/GotPet",
+					"/Users/dtseng/Documents/iOS\\ Workspace/GitHub/GotPet/GotPet",
+					"/Users/dtseng/Documents/iOS\\ Workspace/GitHub/GotPet/GotPet/Tool",
+					"/Users/dtseng/Documents/iOS\\ Workspace/GitHub/GotPet/GotPet/Tool/ThirdParty",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GotPet/GotPet-Prefix.pch";
 				INFOPLIST_FILE = "GotPet/GotPet-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/dtseng/Documents/iOS\\ Workspace/GitHub/GotPet/GotPet",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
